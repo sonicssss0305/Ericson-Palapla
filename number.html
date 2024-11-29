@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightyellow;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: rgba(108, 115, 212, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: rgba(108, 115, 212, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: rgba(19, 31, 197, 0.8);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .shape {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes it a circle */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: rgba(108, 115, 212, 0.8);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>𝙽𝚞𝚖𝚋𝚎𝚛𝚜</h1>
+        <a href="index.html" class="button">𝙱𝚊𝚌𝚔 𝚝𝚘 𝙷𝚘𝚖𝚎</a>
+    </div>
+    <div class="content" id="numbersContainer">
+        <!-- Numbers will be dynamically added here -->
+    </div>
+
+    <script>
+        // List of numbers and their names
+        const numbers = [
+            { value: 1, name: "𝙾𝚗𝚎" },
+            { value: 2, name: "𝚃𝚠𝚘" },
+            { value: 3, name: "𝚃𝚑𝚛𝚎𝚎" },
+            { value: 4, name: "𝙵𝚘𝚞𝚛" },
+            { value: 5, name: "𝙵𝚒𝚟𝚎" },
+            { value: 6, name: "𝚂𝚒𝚡" },
+            { value: 7, name: "𝚂𝚎𝚟𝚎𝚗" },
+            { value: 8, name: "𝙴𝚒𝚐𝚑𝚝" },
+            { value: 9, name: "𝙽𝚒𝚗𝚎" },
+            { value: 10, name: "𝚃𝚎𝚗" }
+        ];
+
+        const numbersContainer = document.getElementById("numbersContainer");
+
+        // Dynamically create a circle for each number
+        numbers.forEach(number => {
+            const shape = document.createElement("div");
+            shape.className = "shape";
+            shape.innerHTML = `<div>${number.value}</div><div>${number.name}</div>`;
+            numbersContainer.appendChild(shape);
+        });
+    </script>
+</body>
+</html>

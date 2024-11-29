@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝚂𝚑𝚊𝚙𝚎𝚜</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lavender;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: rgba(108, 115, 212, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(108, 115, 212, 0.8);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: rgba(19, 31, 197, 0.8);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .shape {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(108, 115, 212, 0.8);
+            border-radius: 50%;
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(108, 115, 212, 0.8);
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 200px solid rgba(108, 115, 212, 0.8);
+            position: relative;
+        }
+        .triangle span {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 1.2em;
+            pointer-events: none;
+        }
+        .rectangle {
+            width: 300px;
+            height: 150px;
+            background-color: rgba(108, 115, 212, 0.8);
+        }
+        .hexagon {
+            position: relative;
+            width: 200px;
+            height: 116px;
+            background-color: rgba(108, 115, 212, 0.8);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>𝚂𝚑𝚊𝚙𝚎𝚜</h1>
+        <a href="index.html" class="button">𝙱𝚊𝚌𝚔 𝚝𝚘 𝙷𝚘𝚖𝚎</a>
+    </div>
+    <div class="content">
+        <!-- Circle -->
+        <div class="shape circle" onclick="playSound('circle')">
+            𝙲𝚒𝚛𝚌𝚕𝚎
+        </div>
+        <!-- Square -->
+        <div class="shape square" onclick="playSound('square')">
+            𝚂𝚚𝚞𝚊𝚛𝚎
+        </div>
+        <!-- Triangle -->
+        <div class="shape triangle" onclick="playSound('triangle')">
+            <span>𝚃𝚛𝚒𝚊𝚗𝚐𝚕𝚎</span>
+        </div>
+        <!-- Rectangle -->
+        <div class="shape rectangle" onclick="playSound('rectangle')">
+            𝚁𝚎𝚌𝚝𝚊𝚗𝚐𝚕𝚎
+        </div>
+        <!-- Hexagon -->
+        <div class="shape hexagon" onclick="playSound('hexagon')">
+            𝙷𝚎𝚡𝚊𝚐𝚘𝚗
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="circleSound" src="circle.mp3" autoplay></audio>
+    <audio id="squareSound" src="square.mp3" autoplay></audio>
+    <audio id="triangleSound" src="triangle.mp3" autoplay></audio>
+    <audio id="rectangleSound" src="rectangle.mp3" autoplay></audio>
+    <audio id="hexagonSound" src="hexagon.mp3" autoplay></audio>
+
+    <script>
+        // Function to play sound based on shape
+        function playSound(shape) {
+            console.log(`Playing sound for ${shape}`);  // Debugging line
+
+            // Map shape names to audio element IDs
+            const soundMap = {
+                circle: 'circleSound',
+                square: 'squareSound',
+                triangle: 'triangleSound',
+                rectangle: 'rectangleSound',
+                hexagon: 'hexagonSound',
+            };
+
+            // Find the correct audio element
+            const audioElement = document.getElementById(soundMap[shape]);
+
+            // If the audio element exists, play it
+            if (audioElement) {
+                audioElement.currentTime = 0; // Reset audio to the start
+                audioElement.play(); // Play audio
+            } else {
+                console.error(`No audio file found for ${shape}`);
+            }
+        }
+    </script>
+</body>
+</html>

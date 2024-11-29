@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: rgba(108, 115, 212, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: rgba(108, 115, 212, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: rgba(19, 31, 197, 0.8);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .shape {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes it a circle */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>𝙲𝚘𝚕𝚘𝚛𝚜</h1>
+        <a href="index.html" class="button">𝙱𝚊𝚌𝚔 𝚝𝚘 𝙷𝚘𝚖𝚎</a>
+    </div>
+    <div class="content" id="shapesContainer">
+        <!-- Shapes will be added dynamically here -->
+    </div>
+
+    <script>
+        // List of colors and their names
+        const colors = [
+            { name: "𝚁𝚎𝚍", color: "red" },
+            { name: "𝙱𝚕𝚞𝚎", color: "blue" },
+            { name: "𝚈𝚎𝚕𝚕𝚘𝚠", color: "yellow" },
+            { name: "𝙶𝚛𝚎𝚎𝚗", color: "green" },
+            { name: "𝙾𝚛𝚊𝚗𝚐𝚎", color: "orange" },
+            { name: "𝙿𝚞𝚛𝚙𝚕𝚎", color: "purple" },
+            { name: "𝙿𝚒𝚗𝚔", color: "pink" },
+            { name: "𝙲𝚢𝚊𝚗", color: "cyan" },
+            { name: "𝙱𝚛𝚘𝚠𝚗", color: "brown" }
+        ];
+
+        const shapesContainer = document.getElementById("shapesContainer");
+
+        // Dynamically create shapes for each color
+        colors.forEach(color => {
+            const shape = document.createElement("div");
+            shape.className = "shape";
+            shape.style.backgroundColor = color.color; // Set background color
+            shape.textContent = color.name; // Set text inside shape
+            shapesContainer.appendChild(shape); // Add shape to container
+        });
+    </script>
+</body>
+</html>

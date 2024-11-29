@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="showPage('home')">𝐊𝐢𝐝𝐬</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="showPage('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('about')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('videos')">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('learn')">Learn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<!-- Home Section -->
+<section id="home" class="page">
+    <div class="container text-center my-5">
+        <h1 class="display-4 fw-bold text-primary">𝐊𝐢𝐝𝐬 𝐅𝐫𝐢𝐞𝐧𝐝𝐥𝐲</h1>
+        <p class="lead text-secondary">𝙴𝚡𝚙𝚕𝚘𝚛𝚎, 𝙻𝚎𝚊𝚛𝚗, 𝚊𝚗𝚍 𝙷𝚊𝚟𝚎 𝙵𝚞𝚗 𝚒𝚗 𝚊 𝚂𝚊𝚏𝚎 𝚂𝚙𝚊𝚌𝚎 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚍 𝙹𝚞𝚜𝚝 𝚏𝚘𝚛 𝚈𝚘𝚞!</p>
+
+        <!-- Hover Effect Section -->
+        <div class="row justify-content-center g-4">
+            <!-- First Figure -->
+            <div class="col-md-4">
+                <figure class="imghvr-stack-up">
+                    <img src="./DALL·E 2024-11-28 07.29.17 - A vibrant and cheerful illustration suitable for a kid-friendly website. The design includes a playful outdoor scene with smiling children playing tog.webp" class="img-fluid rounded shadow" alt="Kids Adventure">
+                    <figcaption class="text-center bg-light p-3 rounded shadow">
+                        <h3 class="text-primary">Watch Exciting Adventures!</h3>
+                        <p class="text-secondary fst-italic">
+                            "Something amazing is waiting for you! Click ‘Watch Now’ to start an adventure filled with cool characters, exciting stories, and lots of fun moments!"
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('videos')">Watch Now</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Second Figure -->
+            <div class="col-md-4">
+                <figure class="imghvr-stack-up">
+                    <img src="./DALL·E 2024-11-28 07.29.21 - A colorful, cheerful illustration of a kid-friendly theme featuring diverse children playing outdoors in a sunny park with balloons, kites, and a sand.webp" class="img-fluid rounded shadow" alt="Safe Content for Kids">
+                    <figcaption class="text-center bg-light p-3 rounded shadow">
+                        <h3 class="text-primary">Discover More About Us!</h3>
+                        <p class="text-secondary fst-italic">
+                            "Our website is filled with fun and safe content for kids like you."
+                        </p>
+                        <a href="#" class="btn btn-success" onclick="showPage('about')">About</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Third Figure -->
+            <div class="col-md-4">
+                <figure class="imghvr-stack-up">
+                    <img src="./DALL·E 2024-11-28 07.29.25 - A playful and colorful illustration featuring a group of diverse, happy children playing together in a park setting, with vibrant green trees, a blue .webp" class="img-fluid rounded shadow" alt="Learn and Explore">
+                    <figcaption class="text-center bg-light p-3 rounded shadow">
+                        <h3 class="text-primary">Start Learning Today!</h3>
+                        <p class="text-secondary fst-italic">
+                            "Are you ready to start learning and exploring new things? Dive into an exciting world of knowledge! From fun facts to cool experiments, there’s always something awesome waiting for you."
+                        </p>
+                        <a href="#" class="btn btn-warning" onclick="showPage('learn')">Learn Now</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Fourth Figure -->
+            <div class="col-md-4">
+                <figure class="imghvr-stack-up">
+                    <img src="./pngtree-play-outside-clipart-children-playing-in-the-park-illustration-cartoon-vector-png-image_11242445.png" class="img-fluid rounded shadow" alt="Outdoor Playtime">
+                    <figcaption class="text-center bg-light p-3 rounded shadow">
+                        <h3 class="text-primary">Fun Playtime Activities!</h3>
+                        <p class="text-secondary fst-italic">
+                            "Ready for some outdoor fun? Click to see a world of games and playful activities for everyone!"
+                        </p>
+                        <a href="funtime.html" class="btn btn-info" onclick="showPage('playtime')">Play Now</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Fifth Figure -->
+            <div class="col-md-4">
+                <figure class="imghvr-stack-up">
+                    <img src="./DALL·E 2024-11-29 12.11.29 - A colorful and creative art design suitable for a kid-friendly website. The scene should feature a variety of playful elements like balloons, kites, c.webp" class="img-fluid rounded shadow" alt="Creative Arts">
+                    <figcaption class="text-center bg-light p-3 rounded shadow">
+                        <h3 class="text-primary">Get Creative!</h3>
+                        <p class="text-secondary fst-italic">
+                            "Unleash your creativity with fun arts and crafts! Click to start making something amazing."
+                        </p>
+                        <a href="creative.html" class="btn btn-danger" onclick="showPage('arts')">Create Now</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .imghvr-stack-up img {
+        border: 5px solid #fff; /* White border for a clean look */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth animations */
+    }
+
+    .imghvr-stack-up img:hover {
+        transform: scale(1.05); /* Zoom effect */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hover shadow */
+    }
+
+    .bg-light {
+        background: linear-gradient(to bottom, #f9f9f9, #e9ecef); /* Soft gradient background for captions */
+    }
+
+    .btn {
+        border-radius: 25px; /* Rounded buttons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px); /* Lift effect on hover */
+    }
+
+    .container h1 {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+    }
+</style>
+
+<!-- About Section -->
+<section id="about" class="page" style="display:none;">
+    <div class="container my-5 d-flex flex-column align-items-center text-center">
+        <h2 class="mb-4">𝙰𝚋𝚘𝚞𝚝 𝚞𝚜</h2>
+        <!-- About Us Text -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p>
+                    𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 𝙺𝚒𝚍 𝙵𝚛𝚒𝚎𝚗𝚍𝚕𝚢, 𝚠𝚑𝚎𝚛𝚎 𝚏𝚞𝚗, 𝚕𝚎𝚊𝚛𝚗𝚒𝚗𝚐, 𝚊𝚗𝚍 𝚌𝚛𝚎𝚊𝚝𝚒𝚟𝚒𝚝𝚢 𝚌𝚘𝚖𝚎 𝚝𝚘𝚐𝚎𝚝𝚑𝚎𝚛 𝚝𝚘 𝚜𝚙𝚊𝚛𝚔 𝚓𝚘𝚢 𝚒𝚗 𝚎𝚟𝚎𝚛𝚢 𝚌𝚑𝚒𝚕𝚍'𝚜 𝚍𝚊𝚢! 𝚆𝚎’𝚛𝚎 𝚙𝚊𝚜𝚜𝚒𝚘𝚗𝚊𝚝𝚎 𝚊𝚋𝚘𝚞𝚝 𝚌𝚛𝚎𝚊𝚝𝚒𝚗𝚐 𝚊 𝚟𝚒𝚋𝚛𝚊𝚗𝚝 𝚊𝚗𝚍 𝚜𝚊𝚏𝚎 𝚘𝚗𝚕𝚒𝚗𝚎 𝚜𝚙𝚊𝚌𝚎 𝚠𝚑𝚎𝚛𝚎 𝚔𝚒𝚍𝚜 𝚌𝚊𝚗 𝚎𝚇𝚙𝚕𝚘𝚛𝚎, 𝚒𝚖𝚊𝚐𝚒𝚗𝚎, 𝚊𝚗𝚍 𝚐𝚛𝚘𝚠 𝚠𝚑𝚒𝚕𝚎 𝚑𝚊𝚟𝚒𝚗𝚐 𝚎𝚗𝚍𝚕𝚎𝚜𝚜 𝚏𝚞𝚗.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Videos Section -->
+<section id="videos" class="page">
+    <div class="container my-5 text-center">
+        <h2 class="mb-4">𝚅𝚒𝚍𝚎𝚘𝚜</h2>
+        <div class="row">
+            <!-- First Video -->
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ccEpTTZW34g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Second Video -->
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/o0IsBUaoTrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Third Video -->
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/efiWeJbdbxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- Fourth Video -->
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VdzzE20zQC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Fifth Video -->
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/tkpfg-1FJLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Sixth Video -->
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/hq3yfQnllfQ
+                " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Learn Section -->
+<section id="learn" class="page" style="display: none;">
+    <div class="container my-5 text-center">
+        <h2 class="mb-4">𝙻𝚎𝚊𝚛𝚗</h2>
+        <p>𝙴𝚡𝚙𝚕𝚘𝚛𝚎 𝚘𝚞𝚛 𝚕𝚎𝚊𝚛𝚗𝚒𝚗𝚐 𝚛𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜!</p>
+        <div class="row">
+            <!-- Unified Style for Buttons -->
+            <div class="col-md-4">
+                <a href="shape.html" class="btn w-75 text-white" style="background-color: rgba(19, 31, 197, 0.8); border: none;">Shapes</a>
+            </div>
+            <div class="col-md-4">
+                <a href="color.html" class="btn w-75 text-white" style="background-color: rgba(19, 31, 197, 0.8); border: none;">Colors</a>
+            </div>
+            <div class="col-md-4">
+                <a href="number.html" class="btn w-75 text-white" style="background-color: rgba(19, 31, 197, 0.8); border: none;">Numbers</a>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+            
+            // Show the selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.style.display = 'block';
+            }
+        }
+
+        // Show the home page by default
+        window.onload = function() {
+            showPage('home');
+        }
+    </script>
+
+<footer class="bg-body-tertiary text-center text-lg-start mt-auto">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Kid Friendly. All Rights Reserved.
+    </div>
+</footer>
+
+    
+</body>
+</html>
